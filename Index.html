@@ -1,0 +1,86 @@
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mi Agenda</title>
+    <link rel="stylesheet" href="css/Styles.css">
+</head>
+
+<body>
+    <!-- ^ SVG Sprite -->
+    <svg aria-hidden="true" style="position: absolute; width: 0; height: 0; overflow: hidden;" version="1.1"
+        xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+        <defs>
+            <symbol id="icon-user" viewBox="0 0 32 32">
+                <path stroke-linejoin="round" stroke-linecap="round" stroke-miterlimit="4" stroke-width="2.6667"
+                    d="M26.667 28v-2.667c0-2.946-2.388-5.333-5.333-5.333v0h-10.667c-2.946 0-5.333 2.388-5.333 5.333v0 2.667">
+                </path>
+                <path stroke-linejoin="round" stroke-linecap="round" stroke-miterlimit="4" stroke-width="2.6667"
+                    d="M21.333 9.333c0 2.946-2.388 5.333-5.333 5.333s-5.333-2.388-5.333-5.333c0-2.946 2.388-5.333 5.333-5.333s5.333 2.388 5.333 5.333z">
+                </path>
+            </symbol>
+            <symbol id="icon-user-plus" viewBox="0 0 32 32">
+                <path stroke-linejoin="round" stroke-linecap="round" stroke-miterlimit="4" stroke-width="2.6667"
+                    d="M21.333 28v-2.667c0-2.946-2.388-5.333-5.333-5.333v0h-9.333c-2.946 0-5.333 2.388-5.333 5.333v0 2.667">
+                </path>
+                <path stroke-linejoin="round" stroke-linecap="round" stroke-miterlimit="4" stroke-width="2.6667"
+                    d="M16.667 9.333c0 2.946-2.388 5.333-5.333 5.333s-5.333-2.388-5.333-5.333c0-2.946 2.388-5.333 5.333-5.333s5.333 2.388 5.333 5.333z">
+                </path>
+                <path stroke-linejoin="round" stroke-linecap="round" stroke-miterlimit="4" stroke-width="2.6667"
+                    d="M26.667 10.667v8"></path>
+                <path stroke-linejoin="round" stroke-linecap="round" stroke-miterlimit="4" stroke-width="2.6667"
+                    d="M30.667 14.667h-8"></path>
+            </symbol>
+            <symbol id="icon-phone" viewBox="0 0 32 32">
+                <path stroke-linejoin="round" stroke-linecap="round" stroke-miterlimit="4" stroke-width="2.6667"
+                    d="M29.333 22.56v4c0 0.003 0 0.007 0 0.011 0 1.473-1.194 2.667-2.667 2.667-0.084 0-0.168-0.004-0.251-0.012l0.011 0.001c-4.327-0.482-8.236-1.943-11.607-4.155l0.1 0.062c-3.242-2.081-5.919-4.758-7.938-7.897l-0.062-0.103c-2.158-3.286-3.62-7.214-4.083-11.442l-0.010-0.118c-0.007-0.072-0.011-0.155-0.011-0.24 0-1.472 1.192-2.665 2.664-2.667h4c0.008-0 0.017-0 0.026-0 1.341 0 2.451 0.99 2.639 2.279l0.002 0.014c0.188 1.4 0.515 2.665 0.973 3.864l-0.039-0.117c0.108 0.279 0.171 0.601 0.171 0.938 0 0.731-0.294 1.394-0.771 1.875l-1.693 1.693c1.932 3.356 4.644 6.068 7.897 7.945l0.103 0.055 1.693-1.693c0.482-0.476 1.144-0.771 1.875-0.771 0.337 0 0.66 0.063 0.957 0.177l-0.018-0.006c1.082 0.418 2.347 0.745 3.658 0.924l0.089 0.010c1.304 0.189 2.294 1.299 2.294 2.641 0 0.023-0 0.046-0.001 0.070l0-0.003z">
+                </path>
+            </symbol>
+        </defs>
+    </svg>
+    <!-- ^ SVG Sprite -->
+    <div class="listadoContactos">
+        <h3 class="listadoContactos--title">Contactos</h3>
+        <div class="listadoContactos--listado">
+            <!-- Esto es un modelo de un item que va a generar Javascript -->
+            <!-- <div class="listadoContactos--listado--item">
+                <svg class="icon">
+                    <use xlink:href="#icon-user"></use>
+                </svg>
+                <h6 class="listadoContactos--listado--item--text">Jhon Doe</h6>
+            </div> -->
+            <!-- Esto es un modelo de un item que va a generar Javascript -->
+
+        </div>
+        <button class="listadoContactos--botonRedondo">
+            <svg class="icon">
+                <use xlink:href="#icon-user-plus"></use>
+            </svg>
+            <!-- <img class="icon" src="assets/user-plus.svg" alt="Ícono de suma de contactos"> -->
+        </button>
+    </div>
+    <div class="informacionContacto">
+        <form class="informacionContacto--formulario">
+            <div class="informacionContacto--formulario--wrapper">
+                <svg class="icon">
+                    <use xlink:href="#icon-user"></use>
+                </svg>
+                <input type="text" class="informacionContacto--formulario--input">
+            </div>
+            <input type="text" class="informacionContacto--formulario--input">
+            <div class="informacionContacto--formulario--wrapper">
+                <img class="icon" src="assets/phone.svg" alt="Ícono Teléfono">
+                <input type="text" class="informacionContacto--formulario--input">
+            </div>
+            <button class="informacionContacto--formulario--button">
+                <h6 class="style__button">Agregar
+                </h6>
+            </button>
+        </form>
+    </div>
+    <script src="js/app.js"></script>
+</body>
+
+</html>

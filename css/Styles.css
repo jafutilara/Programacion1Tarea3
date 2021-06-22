@@ -1,0 +1,189 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100;400;700&display=swap');
+:root {
+    --blue1: #FAFCFF;
+    --blue2: #D3E9FF;
+    --blue3: #93C9FF;
+    --blue4: #2995FF;
+    --blue5: #004F9D;
+    --blue6: #002F5D;
+    --neutral1: #FAFAFA;
+    --neutral2: #E5E5E5;
+    --neutral3: #BFBFBF;
+    --neutral4: #808080;
+    --neutral5: #404040;
+    --neutral6: #262626;
+    --border-radius: 4px;
+    font-family: "Montserrat";
+    font-size: 16;
+}
+
+h1, h2, h3, h4, h5, h6, p {
+    margin: 0;
+}
+
+h1 {
+    font-size: 87;
+}
+
+h2 {
+    font-size: 65;
+}
+
+h3 {
+    font-size: 49;
+    font-weight: 400;
+}
+
+h4 {
+    font-size: 37;
+}
+
+h5 {
+    font-size: 28;
+}
+
+h6 {
+    font-size: 21;
+    font-weight: 400;
+}
+
+.style__button {
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+.style__subtext {
+    font-size: 12;
+    font-weight: bold;
+}
+
+.icon {
+    display: inline-block;
+    width: 2rem;
+    height: 2rem;
+    stroke-width: 0;
+    stroke: currentColor;
+    fill: none;
+    /* height: 32px; */
+    /* width: 32px; */
+}
+
+html, body {
+    height: 100%;
+    width: 100%;
+    margin: 0;
+}
+
+body {
+    display: flex;
+}
+
+.listadoContactos {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    box-sizing: border-box;
+    padding: 32px;
+    background: var(--blue2);
+    box-shadow: 4px 0px 8px #BFBFBF;
+}
+
+.listadoContactos--title {
+    text-align: center;
+}
+
+.listadoContactos--listado {
+    flex: 1;
+    box-sizing: border-box;
+    margin: 80 88 60 88;
+    display: flex;
+    flex-direction: column;
+    gap: 32px;
+    overflow: auto;
+    padding-right: 16px;
+    /* ! personalizacion de scrollbar limitada en Firefox */
+    scrollbar-color: var(--blue5) var(--neutral3);
+    /* ! personalizacion de scrollbar limitada en Firefox */
+}
+
+/* !Solo funciona en Chrome(buscar alternativa o fallback para Firefox) */
+
+.listadoContactos--listado::-webkit-scrollbar {
+    border-radius: var(--border-radius);
+    width: 12px;
+}
+
+.listadoContactos--listado::-webkit-scrollbar-track {
+    border-radius: var(--border-radius);
+    background: var(--neutral3);
+}
+
+.listadoContactos--listado::-webkit-scrollbar-thumb {
+    border-radius: var(--border-radius);
+    background: var(--blue5);
+}
+
+/* !Solo funciona en Chrome(buscar alternativa o fallback para Firefox) */
+
+/* .listadoContactos--listado: */
+
+.listadoContactos--listado--item {
+    display: flex;
+    box-sizing: border-box;
+    padding: 16px;
+    border: 2px solid var(--neutral4);
+    border-radius: var(--border-radius);
+    align-items: center;
+    gap: 16px;
+}
+
+.listadoContactos--listado--item--text {
+    flex: 1;
+}
+
+.listadoContactos--botonRedondo {
+    align-self: flex-end;
+    height: 80px;
+    width: 80px;
+    border: none;
+    border-radius: 50%;
+    background: var(--blue4);
+    color: var(--neutral1);
+}
+
+.informacionContacto {
+    flex: 2;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.informacionContacto--formulario {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    gap: 32px;
+}
+
+.informacionContacto--formulario--wrapper {
+    display: flex;
+    gap: 16px;
+    align-items: center;
+}
+
+.informacionContacto--formulario--input {
+    font-family: inherit;
+    border: 2px solid var(--neutral4);
+    border-radius: var(--border-radius);
+    font-size: 21px;
+    padding: 16px;
+}
+
+.informacionContacto--formulario--button {
+    border: none;
+    border-radius: var(--border-radius);
+    padding: 16px;
+    background: var(--blue4);
+    color: var(--neutral1);
+    font-family: inherit;
+}

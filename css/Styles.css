@@ -187,3 +187,7 @@ body {
     color: var(--neutral1);
     font-family: inherit;
 }
+
+.informacionContacto--formulario--button:disabled {
+    background-color: var(--neutral4);
+}

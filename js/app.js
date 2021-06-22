@@ -73,6 +73,3 @@ botonFormulario.addEventListener('click', async (e) => {
     });
     console.log(response);
 })
-
-
-
